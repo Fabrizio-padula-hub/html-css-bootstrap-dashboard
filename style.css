@@ -8,6 +8,9 @@
 /*--------------
     HEADER
 ---------------*/
+header{
+    height: 65px;
+}
 .col-auto #search{
     border: none;
     background-color: #e5e5e5;
