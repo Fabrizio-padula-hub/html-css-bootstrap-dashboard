@@ -8,11 +8,6 @@
 /*--------------
     DEBUG
 ---------------*/
-aside{
-    background-color: aqua;
-    min-height: 300px;
-    width: 250px;
-}
 .wrapper{
     background-color: bisque;
 }
@@ -68,8 +63,36 @@ header{
 }
 
 /*--------------
+    ASIDE
+---------------*/
+aside{
+    width: 190px;
+    background-color: #051e34;
+    background-image: url(./img/sidebar-bg.png);
+}
+aside span{
+    display: none;
+}
+.menu{
+    list-style: none;
+    padding: 0;
+}
+.admin{
+    margin-top: auto;
+}
+
+/*--------------
     MEDIA QUERY
 ---------------*/
+@media screen and (min-width: 768px){
+    aside{
+        width: 250px;
+    }
+    aside span{
+        display: inline;
+    }
+}
+
 @media screen and (min-width: 992px){
     .logo-sm{
         display: none;
