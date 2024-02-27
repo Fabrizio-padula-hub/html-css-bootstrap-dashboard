@@ -62,9 +62,18 @@
                 <!-- menu -->
                 <nav class="d-flex menu justify-content-center">
                   <ul class="menu text-white mt-3">
-                    <li><i class="fa-solid fa-house fs-5 me-2"></i><span>Home</span></li>
-                    <li><i class="fa-solid fa-chart-simple fs-5 me-2 my-3"></i><span>Stats</span></li>
-                    <li><i class="fa-solid fa-signal fs-5 me-2"></i><span>Signals</span></li>
+                    <li>
+                        <i class="fa-solid fa-house fs-5"></i>
+                        <span class="ms-3">Home</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-chart-simple fs-5 my-3"></i>
+                        <span class="ms-3">Stats</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-signal fs-5"></i>
+                        <span class="ms-3">Signals</span>
+                    </li>
                   </ul>  
                 </nav>
                 <!-- /menu -->
@@ -76,10 +85,115 @@
                 <!-- /admin -->
             </aside>
             <section class="main-content">
-                <div class="container-fluid">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati nobis et delectus officia inventore necessitatibus at assumenda quas est excepturi quia facere voluptates culpa, hic beatae amet corporis architecto.
-                    </p>
+                <div class="ms-bg-blu text-white">
+                    <div>
+                        <span>Nuovo Studente</span>
+                        <!-- input offcanvas -->
+                        <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <!-- nome e cognome -->
+                                <div class="row">
+                                    <div class="col">
+                                        <span>Nome</span>
+                                        <input type="text" class="form-control" aria-label="First name">
+                                    </div>
+                                    <div class="col">
+                                        <span>Cognome</span>
+                                        <input type="text" class="form-control" aria-label="Last name">
+                                    </div>
+                                </div>
+                                <!-- /nome e cognome -->
+                                <!-- email e password -->
+                                <form class="row g-3">
+                                    <div class="col">
+                                        <label for="inputEmail4" class="form-label">Email</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="fas fa-at"></i></span>
+                                            <input id="inputEmail4" type="email" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <label for="inputPassword4" class="form-label">Password</label>
+                                        <input id="inputPassword4" type="password" class="form-control">
+                                    </div>
+                                </form>
+                                <!-- /email e password -->
+                                <!-- reinsereisci email e password -->
+                                <form class="row g-3">
+                                    <div class="col">
+                                        <label for="inputEmail4" class="form-label">Indirizzo Email</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="fas fa-at"></i></span>
+                                            <input id="inputEmail4" type="email" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <label for="inputPassword4" class="form-label">Password</label>
+                                        <input id="inputPassword4" type="password" class="form-control">
+                                    </div>
+                                </form>
+                                <!-- /reinsereisci email e password -->
+                                <!-- indirizzo -->
+                                <div class="col-12">
+                                    <label for="inputAddress" class="form-label">Indirizzo</label>
+                                    <input id="inputAddress" type="text" class="form-control">
+                                </div>
+                                <!-- /indirizzo -->
+                                <!-- citta stato cap -->
+                                <form class="row g-3">
+                                    <div class="col-6">
+                                        <label for="inputCity" class="form-label">Città</label>
+                                        <input type="text" class="form-control" id="inputCity">
+                                    </div>
+                                    <div class="col-4">
+                                        <label for="inputState" class="form-label">Stato</label>
+                                        <select id="inputState" class="form-select">
+                                            <option selected>Scegli...</option>
+                                            <option value="italia">Italia</option>
+                                            <option value="francia">Francia</option>
+                                            <option value="Germania">Germania</option>
+                                            <option value="Portogallo">Portogallo</option>
+                                            <option value="America">America</option>
+                                            <option value="Russia">Russia</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-2">
+                                        <label for="inputZip" class="form-label">CAP</label>
+                                        <input type="text" class="form-control" id="inputZip">
+                                    </div>
+                                </form>
+                                <!-- /citta stato cap -->
+                                <!-- carica foto -->
+                                <div class="mb-3">
+                                    <label for="formFile" class="form-label">Foto</label>
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+                                <!-- /carica foto -->
+                                <!-- checks -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Seleziona per proseguire
+                                    </label>
+                                </div>
+                                <!-- /checks -->
+                                <!-- bottoni -->
+                                <button type="submit" class="btn btn-primary">Salva</button>
+                                <button type="reset" class="btn btn-warning">Svuota</button>
+                                <!--/ bottoni -->
+                            </div>
+                        </div>
+                        <!-- /input offcanvas -->
+                        
+
+                    </div>
                 </div>
             </section>
         </div>
