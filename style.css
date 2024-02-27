@@ -6,6 +6,25 @@
 }
 
 /*--------------
+    DEBUG
+---------------*/
+aside{
+    background-color: aqua;
+    min-height: 300px;
+    width: 250px;
+}
+.wrapper{
+    background-color: bisque;
+}
+
+/*--------------
+    GENERAL
+---------------*/
+.wrapper{
+    height: calc(100vh - 65px);
+}
+
+/*--------------
     HEADER
 ---------------*/
 header{
