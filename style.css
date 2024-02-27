@@ -1,0 +1,61 @@
+/*--------------
+    COLOR-BG
+---------------*/
+.ms-bg-lightgray{
+    background-color: #f8f9fa;
+}
+
+/*--------------
+    HEADER
+---------------*/
+.col-auto #search{
+    border: none;
+    background-color: #e5e5e5;
+    border-radius: 5px;
+    width: 100%;
+    min-height: 30px;
+}
+.ms-relative{
+    position: relative;
+}
+.icon-search{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.ms-bell{
+    color: #ff8f00;
+    background: none;
+    border: none;
+}
+.ms-bell::after{
+    display: none;
+}
+.logo-sm{
+    width: 40px;
+}
+.logo-lg{
+    display: none;
+}
+.icons-sm{
+    display: none;
+}
+
+/*--------------
+    MEDIA QUERY
+---------------*/
+@media screen and (min-width: 992px){
+    .logo-sm{
+        display: none;
+    }
+    .logo-lg{
+        display: block;
+    }
+    .ms-icons-lg{
+        display: inline;
+    }
+}

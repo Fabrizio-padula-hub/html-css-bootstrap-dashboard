@@ -11,6 +11,53 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="ms-bg-lightgray py-2">
+        <section class="container-fluid text-center">
+            <div class="row justify-content-center align-items-center bg-white py-1">
+                <!-- logo -->
+                <div class="col-1 col-lg-2">
+                    <img class="logo-sm" src="./img/mobile-logo.png" alt="logo mobile">
+                    <img class="img-fluid logo-lg" src="./img/logo.svg" alt="logo display">
+                </div>
+              <!-- /logo -->
+              <!-- search bar -->
+                <div class="col-auto col-lg-8 flex-grow-1 ms-relative">
+                    <input id="search" type="search" placeholder="      Prova a cercare: Lezioni di Laravel">
+                    <button class="icon-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+              <!-- /search bar -->
+              <!-- icone destra -->
+                <div class="col-1 col-lg-2 d-flex align-items-center justify-content-around">
+                    <i class="fa-solid fa-bars icons-sm ms-icons-lg"></i>
+                    <i class="fa-solid fa-circle-question icons-sm ms-icons-lg"></i>
+                    <i class="fa-solid fa-ellipsis-vertical icons-sm ms-icons-lg"></i>
+                    <!-- bottone dropdown -->
+                    <div class="dropdown">
+                        <button class="ms-bell dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-bell"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">Profilo</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Fatturazione</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /bottone dropdown -->
+                </div>
+              <!-- /icone destra -->
+            </div>
+        </section>
+    </header>
+    <main></main>
+
 
 
 
