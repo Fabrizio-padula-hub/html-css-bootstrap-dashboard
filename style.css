@@ -17,8 +17,11 @@
 /*--------------
     DEBUG
 ---------------*/
-.wrapper{
-    background-color: bisque;
+.debug{
+    border: 1px dashed black;
+}
+.debug-row{
+    border: 1px solid coral;
 }
 
 /*--------------
