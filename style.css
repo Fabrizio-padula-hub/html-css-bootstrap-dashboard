@@ -28,6 +28,7 @@
     GENERAL
 ---------------*/
 .wrapper{
+    background-color: #f8f9fa;
     height: calc(100vh - 65px);
 }
 .main-content{
@@ -80,6 +81,13 @@ aside{
 }
 .admin{
     margin-top: auto;
+}
+
+/*--------------
+    MAIN
+---------------*/
+.img-class{
+    width: 25px;
 }
 
 
