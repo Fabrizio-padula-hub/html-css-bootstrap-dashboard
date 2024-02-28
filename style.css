@@ -7,6 +7,9 @@
 .ms-bg-blu{
     background-color: #1b72e8;
 }
+.ms-bg-opaque-blue{
+    background-color: #00000030;
+}
 
 /*--------------
     DEBUG
